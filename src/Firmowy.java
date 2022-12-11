@@ -9,7 +9,7 @@ public class Firmowy extends Klient{
         REGON = "";
     }
 
-    public Firmowy(String name, String second_name, String id, String birthdate, String nrKarty, int znizka, int pkt, String NIP, String REGON) {
+    public Firmowy(String name, String second_name, String id, Date birthdate, String nrKarty, int znizka, int pkt, String NIP, String REGON) {
         super(name, second_name, id, birthdate, nrKarty, znizka, pkt);
         this.NIP = NIP;
         this.REGON = REGON;

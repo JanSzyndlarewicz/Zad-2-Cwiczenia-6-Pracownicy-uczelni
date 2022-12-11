@@ -10,7 +10,7 @@ public abstract class Klient extends Osoba{
         pkt = 0;
     }
 
-    public Klient(String name, String second_name, String id, String birthdate, String nrKarty, int znizka, int pkt) {
+    public Klient(String name, String second_name, String id, Date birthdate, String nrKarty, int znizka, int pkt) {
         super(name, second_name, id, birthdate);
         this.nrKarty = nrKarty;
         this.znizka = znizka;

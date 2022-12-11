@@ -1,14 +1,15 @@
 public abstract class Osoba {
-    private String name, second_name, id, birthdate;
+    private String name, second_name, id;
+    private Date birthdate;
 
     public Osoba(){
         name = "Imię";
         second_name = "Nazwisko";
         id = "000000";
-        birthdate = "01.01.1900";
+        birthdate = new Date();
     }
 
-    public Osoba(String name, String second_name, String id, String birthdate){
+    public Osoba(String name, String second_name, String id, Date birthdate){
         this.name = name;
         this.second_name = second_name;
         this.id = id;
@@ -39,13 +40,11 @@ public abstract class Osoba {
         this.id = id;
     }
 
-    public String getBirthdate() {
+    public Date getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(String birthdate) {
+    public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
     }
-
-
 }

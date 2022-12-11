@@ -1,5 +1,13 @@
 public class Obsluga {
 
+    public Date getBirthdate(Klient klient){
+        return klient.getBirthdate();
+    }
+
+    public void setBirthdate(Klient klient, Date birthdate){
+        klient.setBirthdate(birthdate);
+    }
+
     public String getNumerKarty(Klient klient){
         return klient.getNrKarty();
     }
