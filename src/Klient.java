@@ -5,6 +5,7 @@ public abstract class Klient extends Osoba{
 
     public Klient() {
         super();
+        nrKarty = "";
         znizka = 0;
         pkt = 0;
     }

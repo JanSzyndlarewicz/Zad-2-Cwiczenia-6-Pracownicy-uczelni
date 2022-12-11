@@ -3,7 +3,7 @@ public class Zadanie {
     private int przyblizonyCzasRealizacji;
     private String zadanie;
     private String opisZadania;
-    private String deathLine;
+    private String deadLine;
 
 
     public Zadanie() {
@@ -11,16 +11,16 @@ public class Zadanie {
         przyblizonyCzasRealizacji = 0;
         zadanie = "";
         opisZadania = "";
-        deathLine = "";
+        deadLine = "";
     }
 
 
-    public Zadanie(int priorytet, int przyblizonyCzasRealizacji, String zadanie, String opisZadania, String deathLine) {
+    public Zadanie(int priorytet, int przyblizonyCzasRealizacji, String zadanie, String opisZadania, String deadLine) {
         this.priorytet = priorytet;
         this.przyblizonyCzasRealizacji = przyblizonyCzasRealizacji;
         this.zadanie = zadanie;
         this.opisZadania = opisZadania;
-        this.deathLine = deathLine;
+        this.deadLine = deadLine;
     }
 
     public int getPriorytet() {
@@ -56,10 +56,10 @@ public class Zadanie {
     }
 
     public String getDeathLine() {
-        return deathLine;
+        return deadLine;
     }
 
     public void setDeathLine(String deathLine) {
-        this.deathLine = deathLine;
+        this.deadLine = deathLine;
     }
 }

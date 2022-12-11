@@ -12,7 +12,7 @@ public class Obsluga {
         return klient.getZnizka();
     }
 
-    public void setNumerKarty(Klient klient, int znizka){
+    public void setZnizka(Klient klient, int znizka){
         klient.setZnizka(znizka);
     }
 

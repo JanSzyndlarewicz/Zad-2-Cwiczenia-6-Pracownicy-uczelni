@@ -3,20 +3,16 @@ public class Firmowy extends Klient{
     private String NIP;
     private String REGON;
 
-    private int limit;
-
     public Firmowy() {
         super();
         NIP = "";
         REGON = "";
-        limit = 0;
     }
 
-    public Firmowy(String name, String second_name, String id, String birthdate, String nrKarty, int znizka, int pkt, String NIP, String REGON, int limit) {
+    public Firmowy(String name, String second_name, String id, String birthdate, String nrKarty, int znizka, int pkt, String NIP, String REGON) {
         super(name, second_name, id, birthdate, nrKarty, znizka, pkt);
         this.NIP = NIP;
         this.REGON = REGON;
-        this.limit = limit;
     }
 
     public String getNIP() {
@@ -34,14 +30,5 @@ public class Firmowy extends Klient{
     public void setREGON(String REGON) {
         this.REGON = REGON;
     }
-
-    public int getLimit() {
-        return limit;
-    }
-
-    public void setLimit(int limit) {
-        this.limit = limit;
-    }
-
 
 }
